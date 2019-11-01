@@ -488,7 +488,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/10/26/paper-meta-pruning/" itemprop="url">���Ľ�� - MetaPruning��Meta Learning for Automatic Neural Network Channel Pruning</a></h1>
+                <a class="post-title-link" href="/2019/10/26/paper-meta-pruning/" itemprop="url">论文解读 - MetaPruning：Meta Learning for Automatic Neural Network Channel Pruning</a></h1>
         
 
         <div class="post-meta">
@@ -539,8 +539,8 @@
 
       
         
-          <p>��ƪ���������ڿ��ӡ������ڲ���һ������ģ���飬�｣��ʦҲ�Ǻܿ���NAS��صļ�����������ƪ�������۴�ѧ���ϻ��ǹ�������϶��п������˽���ĵط����ص����±�����ģ�ͼ�֦�㷨�ܹ�����ģ�ͼ�������ʵ��ģ��ѹ���ͼ��ٵ�Ŀ�ģ�����ģ�ͼ�֦������ȷ����֦�����Ȳ����Ĺ���ʵ������ͷʹ����ƪ���������PruningNet�ĸ���Զ�Ϊ��֦���ģ������Ȩ�أ��Ӷ��ƹ��˷�ʱ��retrain���衣�����ܹ��ͽ����㷨������������ϣ�ͨ����������network��coding vector���Զ��ظ�������Լ��������֦�������ṹ����AutoML������ȣ����ַ��������Ǵ�ͷ���������Ǵ����еĴ�ģ�ͳ������Ӷ���С�������ռ䣬��ʡ������������ʱ�䡣���˾������ּ�֦��NAS��ϵķ�����Ӧ�û����Ժ�����Խ��Խ���˵�ע�⡣��ƪ���µĴ����Ѿ���Դ����Github��<a href="https://github.com/liuzechun/MetaPruning" target="_blank" rel="noopener">MetaPruning</a>��</p>
-<p>��ƪ�����׷���<a href="https://wemp.app/accounts/fd027dce-bcd1-4eaf-9e64-88bffd7ca8a2" target="_blank" rel="noopener">Paper Weekly���ں�</a>����ӭ��ע��</p>
+          <p>这篇文章来自于旷视。旷视内部有一个基础模型组，孙剑老师也是很看好NAS相关的技术，相信这篇文章无论从学术上还是工程落地上都有可以让人借鉴的地方。回到文章本身，模型剪枝算法能够减少模型计算量，实现模型压缩和加速的目的，但是模型剪枝过程中确定剪枝比例等参数的过程实在让人头痛。这篇文章提出了PruningNet的概念，自动为剪枝后的模型生成权重，从而绕过了费时的retrain步骤。并且能够和进化算法等搜索方法结合，通过搜索编码network的coding vector，自动地根据所给约束搜索剪枝后的网络结构。和AutoML技术相比，这种方法并不是从头搜索，而是从已有的大模型出发，从而缩小了搜索空间，节省了搜索算力和时间。个人觉得这种剪枝和NAS结合的方法，应该会在以后吸引越来越多人的注意。这篇文章的代码已经开源在了Github：<a href="https://github.com/liuzechun/MetaPruning" target="_blank" rel="noopener">MetaPruning</a>。</p>
+<p>这篇文章首发于<a href="https://wemp.app/accounts/fd027dce-bcd1-4eaf-9e64-88bffd7ca8a2" target="_blank" rel="noopener">Paper Weekly公众号</a>，欢迎关注。</p>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2019/10/26/paper-meta-pruning/#more" rel="contents">
