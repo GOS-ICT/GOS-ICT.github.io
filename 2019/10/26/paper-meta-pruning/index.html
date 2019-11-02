@@ -83,20 +83,20 @@
 <meta name="keywords" content="paper,model compression">
 <meta property="og:type" content="article">
 <meta property="og:title" content="论文解读 - MetaPruning：Meta Learning for Automatic Neural Network Channel Pruning">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;10&#x2F;26&#x2F;paper-meta-pruning&#x2F;index.html">
+<meta property="og:url" content="https:&#x2F;&#x2F;gos-ict.github.io&#x2F;2019&#x2F;10&#x2F;26&#x2F;paper-meta-pruning&#x2F;index.html">
 <meta property="og:site_name" content="来啊，快活啊~">
 <meta property="og:description" content="这篇文章来自于旷视。旷视内部有一个基础模型组，孙剑老师也是很看好NAS相关的技术，相信这篇文章无论从学术上还是工程落地上都有可以让人借鉴的地方。回到文章本身，模型剪枝算法能够减少模型计算量，实现模型压缩和加速的目的，但是模型剪枝过程中确定剪枝比例等参数的过程实在让人头痛。这篇文章提出了PruningNet的概念，自动为剪枝后的模型生成权重，从而绕过了费时的retrain步骤。并且能够和进化算法等搜">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;img&#x2F;paper_metapruning_pruningnet.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;img&#x2F;paper_metapruning_pruningnet_forward.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;img&#x2F;paper_metapruning_whole_meta_learning.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;img&#x2F;paper_metapruning_evaluation_algorithm.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;img&#x2F;paper_metapruning_compare_with_mobilenet_baseline.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;img&#x2F;paper_metapruning_compare_with_other_pruning_automl.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;img&#x2F;paper_metapruning_latency_compare_with_mobilenet_baseline.jpg">
+<meta property="og:image" content="https:&#x2F;&#x2F;gos-ict.github.io&#x2F;img&#x2F;paper_metapruning_pruningnet.jpg">
+<meta property="og:image" content="https:&#x2F;&#x2F;gos-ict.github.io&#x2F;img&#x2F;paper_metapruning_pruningnet_forward.jpg">
+<meta property="og:image" content="https:&#x2F;&#x2F;gos-ict.github.io&#x2F;img&#x2F;paper_metapruning_whole_meta_learning.jpg">
+<meta property="og:image" content="https:&#x2F;&#x2F;gos-ict.github.io&#x2F;img&#x2F;paper_metapruning_evaluation_algorithm.jpg">
+<meta property="og:image" content="https:&#x2F;&#x2F;gos-ict.github.io&#x2F;img&#x2F;paper_metapruning_compare_with_mobilenet_baseline.jpg">
+<meta property="og:image" content="https:&#x2F;&#x2F;gos-ict.github.io&#x2F;img&#x2F;paper_metapruning_compare_with_other_pruning_automl.jpg">
+<meta property="og:image" content="https:&#x2F;&#x2F;gos-ict.github.io&#x2F;img&#x2F;paper_metapruning_latency_compare_with_mobilenet_baseline.jpg">
 <meta property="og:updated_time" content="2019-11-01T16:14:24.084Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;img&#x2F;paper_metapruning_pruningnet.jpg">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;gos-ict.github.io&#x2F;img&#x2F;paper_metapruning_pruningnet.jpg">
 
 
 
@@ -126,7 +126,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/10/26/paper-meta-pruning/"/>
+  <link rel="canonical" href="https://gos-ict.github.io/2019/10/26/paper-meta-pruning/"/>
 
 
 
@@ -188,7 +188,7 @@
       
         
         <li class="menu-item menu-item-home">
-          <a href="/%20" rel="section">
+          <a href="/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
@@ -198,7 +198,7 @@
       
         
         <li class="menu-item menu-item-about">
-          <a href="/about/%20" rel="section">
+          <a href="/about/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
@@ -208,7 +208,7 @@
       
         
         <li class="menu-item menu-item-tags">
-          <a href="/tags/%20" rel="section">
+          <a href="/tags/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
@@ -218,7 +218,7 @@
       
         
         <li class="menu-item menu-item-archives">
-          <a href="/archives/%20" rel="section">
+          <a href="/archives" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
@@ -259,7 +259,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/26/paper-meta-pruning/">
+    <link itemprop="mainEntityOfPage" href="https://gos-ict.github.io/2019/10/26/paper-meta-pruning/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="一个脱离低级趣味的人">
@@ -484,7 +484,7 @@
             
               <div class="site-state-item site-state-posts">
               
-                <a href="/archives/%20%7C%7C%20archive">
+                <a href="/archives%7C%7C%20archive">
               
                   <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
