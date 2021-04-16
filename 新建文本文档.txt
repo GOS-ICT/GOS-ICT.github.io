@@ -1,0 +1,23 @@
+git config --global user.name "GOS-ICT"
+git config --global user.email "zhangjindong@ict.ac.cn"
+
+git add .
+git commit -m "This is the message describing the commit"
+
+
+git remote add origin git@github.com:GOS-ICT/GOS-ICT.github.io.git
+
+
+
+
+git push -u origin master 
+
+
+git clone https://github.com/iissnan/hexo-theme-next.git themes/next
+
+
+=======常用命令==============
+
+hexo clean //清理静态文件
+hexo g //生成静态文件
+hexo d //部署
